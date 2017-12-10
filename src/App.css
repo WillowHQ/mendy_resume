@@ -26,3 +26,310 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+#page-wrap{
+  width:900px;
+  margin:auto;
+}
+
+.headertogether{
+  background-image: url(/images/IMG_0292.jpg);
+  background-image: image(100%);
+  background-attachment: fixed;
+  background-size:100%, 100%;
+  height: 450px;
+}
+/*nav,header, .headersection2 {
+  background-image: url(/images/IMG_0292.jpg);
+  background-size:100%, 100%;
+}*/
+
+.myname, .linkable_nonbutton, .mynamewithjobtitle {
+  color:#FFFFFF;
+}
+
+body {
+  
+  width: 100%;
+  text-decoration: none;
+  font-family: 'Vollkorn', serif;  
+  background-color: #3B3D44;
+}
+
+
+#about {
+  padding-bottom: 20px;
+  color: whitesmoke;
+}
+
+.aboutsecondpart{
+  display:flex;
+  justify-content: space-between;
+}
+
+.perme{
+  text-align: center;
+  padding:10px;
+}
+
+
+@keyframes spin{
+  from{
+      transform:rotate(0deg)
+  }
+  to{
+      transform:rotate(365deg)
+  }
+}
+
+.picrotate:hover{
+  animation-name:spin;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+}
+
+.skillsall {
+  background-color:#26272C;
+  color: whitesmoke;
+}
+
+#experience {
+  background-color: whitesmoke;
+  color: #000000;
+}
+
+a {
+  color: whitesmoke;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color:whitesmoke;
+  margin: 20px 10px;
+
+}
+
+.headersection2 {
+  display: flex;
+  color: whitesmoke;
+  align-content: center;
+  justify-content: space-between;
+  margin: 20px 80px;
+}
+
+.picturepart {
+  justify-content: flex-end;
+  -webkit-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+  box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+  
+}
+
+.namepart {
+  font-size: 18pt;
+  justify-content: flex-start;
+}
+
+.headeritem2 {
+  flex:1;
+}
+
+.headeritem2 ul li, .linkable_nonbutton:hover{
+  color:dimgray;
+}
+
+
+.headeritem1 {
+  flex: 1;
+}
+
+#about{
+  font-size: 15pt;
+}
+
+.aboutall{
+  display: flex;
+  justify-content:space-between;
+  margin:10px;
+}
+
+div ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  padding-right: 0px;
+  list-style-type: square;
+  color:#FFFFFF;
+  flex-grow: 4;
+}
+
+.skillsall {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin:auto;
+}
+
+.skillsall>h1{
+  margin: 10px;
+}
+
+.skill-list-item {
+  display: flex;
+  align-items: flex-start;
+  width:100%;
+  align-items: baseline
+  
+}
+
+.skillnamepart {
+  padding:10px;
+  flex:0.5;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: steps(3);
+}
+
+.skillnamepart:hover{
+  color:black;
+}
+
+
+.meterpart {
+  display: flex;
+  padding:10px;
+  flex:3;
+  align-items:baseline;
+}
+
+.meteritem {
+  flex:20;
+}
+
+.percentage {
+  margin:6px;
+}
+
+/*here starts experience section*/
+
+
+.experience {
+  margin:10px;
+  color:whitesmoke;
+}
+
+#experience{
+  background-color: #3B3D44;
+  color:whitesmoke;
+}
+.perjob {
+  display:flex;    
+}
+
+
+.leftcolumn {
+  padding-right: 20px;
+  padding-bottom: 80px;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-content: flex-end; 
+  flex:1;
+  font-size: 15pt;
+  justify-content: space-around;
+}
+
+.location{
+  padding: 10px;
+  border: 1px solid whitesmoke;
+  height: 150px;
+  width: 160px;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+
+.location:hover{
+  animation-name: colorchange;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  
+}
+
+@keyframes colorchange{
+  {
+      color: whitesmoke;
+  }
+  to{
+      color: dimgray;
+  }
+}
+
+
+.rightcolumn {
+  align-content: center;
+  padding-left: 20px;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex:4;
+  
+}
+
+
+#listoftasks {
+  display:flex;
+  flex-direction: column;
+}
+.footer {
+  margin:10px;
+  background-color: #323031;
+  color: whitesmoke;
+  display: flex;
+  justify-items: 
+}
+
+#contact{
+  margin: 10px;
+}
+
+.footerleft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex:1; 
+  margin:10px;
+}
+
+.undercontact{
+  text-align: center;
+  
+}
+
+.footerright {
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  align-items: center;
+  justify-content:space-around;
+}
+
+@media screen and (max-width:500px){
+  .aboutsecondpart{
+      display:block;
+  }
+  
+  .headeritem2{
+      display:none;
+  }
+  .picturepart{
+      display:none;
+  }
+}
